@@ -238,7 +238,7 @@ margin: auto;
 .modal__close {
   position: absolute;
   right: 5em;
-  top: 4em;
+  top: 5em;
   width: 1.1em;
   height: 1.1em;
   cursor: pointer;
@@ -249,7 +249,7 @@ margin: auto;
   content: '';
   position: absolute;
   width: 8px;
-  height: 3.5em;
+  height: 2.5em;
   background: white;
   font-weight: bold;
   display: block;
