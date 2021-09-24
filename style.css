@@ -250,7 +250,7 @@ margin: auto;
   position: absolute;
   width: 8px;
   height: 2.5em;
-  background: white;
+  background: #e60033;
   font-weight: bold;
   display: block;
   transform: rotate(45deg);
