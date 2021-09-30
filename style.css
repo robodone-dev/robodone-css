@@ -53,7 +53,7 @@ h1 .title {
     padding: 0 1em;
     margin: 2em 10;
     font-weight: bold;
-    background: #FFF099;
+    background: #FFF7cc;
 }
 .box_yellow p {
     margin: 0; 
@@ -98,6 +98,12 @@ h1 .title {
   padding: 0.6em 0.5em;/*文字の上下 左右の余白*/
   font-size:0.5rem;
   color: #FFEFD5;/*文字色*/
+}
+
+.challenger-c {
+  padding: 0.6em 0.5em;/*文字の上下 左右の余白*/
+  font-size:0.5rem;
+  color: #FFF7cc;/*文字色*/
 }
 
 footer{
