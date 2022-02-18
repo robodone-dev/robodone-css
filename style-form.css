@@ -9,10 +9,10 @@ input[type=radio][value="モデル１"]+label:before{
   background-image: url(https://assets.robo-done.net/assets/uploads/img/work/kinder-robot/10.gif);
 }
 input[type=radio][value="モデル２"]+label:before{
-  background-image: url(https://assets.robo-done.net/assets/uploads/img/work/kinder-robot/15.png);
+  background-image: url(https://assets.robo-done.net/assets/uploads/img/work/kinder-robot/15.gif);
 }
 input[type=radio][value="モデル３"]+label:before{
-  background-image: url(https://assets.robo-done.net/assets/uploads/img/work/kinder-robot/16.png);
+  background-image: url(https://assets.robo-done.net/assets/uploads/img/work/kinder-robot/16.gif);
 }
 input[type=radio]:checked+label::before{
   border: 4px solid red;
