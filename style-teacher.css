@@ -21,6 +21,18 @@
     padding: 0;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 100%;
+  color:#fff;
+}
+
 /*------------------------------
 
 ここからアコーディオンのCSS
@@ -51,7 +63,7 @@
   background: #fff;
   position: absolute;
   top: 50%;
-  right: 5%;
+  right: 2%;
   transform: translateY(-50%);
 }
 
@@ -62,14 +74,26 @@
 }
 
 /* QとAのデザイン */
-.accordion-open span,
-.accordion-close span {
+.accordion-open span {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 70px;
   height: 100%;
   background: #FF90A9;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 0;
+}
+
+.accordion-close span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 100%;
+  background: #ffdde4;
   position: absolute;
   text-align: center;
   left: 0;
@@ -90,6 +114,7 @@
   opacity: 0;
   transition: 0.5s;/* 表示速度の設定 */
   position: relative;
+  
 }
 
 /* チェックボックスにチェックが入ったらAnswer部分を表示する */
@@ -97,7 +122,7 @@
   height: auto;
   opacity: 1;
   padding: 10px 10px 10px 90px;
-  background: #55acee;
+  background: #c9edf2;
   font-weight: 700;
 }
 
