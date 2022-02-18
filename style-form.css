@@ -3,7 +3,7 @@ input[type=radio]+label:before{
   display: inline-block;
   background-size: contain;
   width: 300px;
-  height: 300px;
+  height: auto;
 }
 input[type=radio][value="モデル１"]+label:before{
   background-image: url(https://assets.robo-done.net/assets/uploads/img/work/kinder-robot/10.gif);
