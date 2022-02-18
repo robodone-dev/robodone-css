@@ -6,7 +6,7 @@ input[type=radio]+label:before{
   height: 300px;
 }
 input[type=radio][value="モデル１"]+label:before{
-  background-image: url(https://assets.robo-done.net/assets/uploads/img/work/kinder-robot/10.png);
+  background-image: url(https://assets.robo-done.net/assets/uploads/img/work/kinder-robot/10.gif);
 }
 input[type=radio][value="モデル２"]+label:before{
   background-image: url(https://assets.robo-done.net/assets/uploads/img/work/kinder-robot/11.png);
