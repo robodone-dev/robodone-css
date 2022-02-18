@@ -10,6 +10,17 @@
   color:#fff;
 }
 
+.box_gray {
+    padding: 0.5em 1em;
+    margin: 2em 10;
+    font-weight: bold;
+    background: #f6f6f6;
+}
+.box_gray p {
+    margin: 0; 
+    padding: 0;
+}
+
 /*------------------------------
 
 ここからアコーディオンのCSS
