@@ -33,98 +33,25 @@
   color:#fff;
 }
 
-/*------------------------------
-
-ここからアコーディオンのCSS
-
-------------------------------*/
-/* チェックボックスは非表示 */
-.accordion-hidden{
-  display: none;
+.g-slide{
+position: relative;
+/*margin: 5px 0 5px 0;*/
+padding-bottom: 56.25%;
 }
+.g-slide iframe {
+box-shadow: 2px 2px 10px;
+border: 0;
+width: 90%;
+height: 90%;
+position: absolute;
+left: 0;
+right: 0;
+margin: auto;
+/*border-radius: 20px;*/
+}   
 
-/* Question部分 */
-.accordion-open {
-  display: block;
-  padding: 10px 10px 10px 90px;
-  background: #5ECDDE;
-  cursor: pointer;
-  margin: 5px 0;
-  font-weight: 700;
-  position: relative;/* 変更部分 */
-}
 
-/* 開閉状態を示すアイコン+の作成 */
-.accordion-open::before,
-.accordion-open::after {
-  content: '';
-  width: 20px;
-  height: 3px;
-  background: #fff;
-  position: absolute;
-  top: 50%;
-  right: 2%;
-  transform: translateY(-50%);
-}
 
-/* 一本は縦にして+を作る */
-.accordion-open::after {
-  transform: translateY(-50%) rotate(90deg);
-  transition: .5s;
-}
-
-/* QとAのデザイン */
-.accordion-open span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
-  height: 100%;
-  background: #FF90A9;
-  position: absolute;
-  text-align: center;
-  left: 0;
-  top: 0;
-}
-
-.accordion-close span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
-  height: 100%;
-  background: #ffdde4;
-  position: absolute;
-  text-align: center;
-  left: 0;
-  top: 0;
-}
-
-/* アコーディオンが開いたら縦棒を横棒にして-にする */
-.accordion-hidden:checked + .accordion-open:after {
-  transform: translateY(-50%) rotate(0);
-}
-
-/* Answer部分 */
-.accordion-close {
-  display: block;
-  height: 0;/* 要素の高さは0 */
-  overflow: hidden;/* 非表示 */
-  padding: 0 0 0 60px;
-  opacity: 0;
-  transition: 0.5s;/* 表示速度の設定 */
-  position: relative;
-  
-}
-
-/* チェックボックスにチェックが入ったらAnswer部分を表示する */
-.accordion-hidden:checked + .accordion-open + .accordion-close {
-  height: auto;
-  opacity: 1;
-  padding: 10px 10px 10px 90px;
-  background: #c9edf2;
-  font-weight: 700;
-}
 
 .btn {
   width:20%;
@@ -292,19 +219,96 @@ margin: auto;
 /*border-radius: 20px;*/
 }  
 
-.g-slide{
-position: relative;
-/*margin: 5px 0 5px 0;*/
-padding-bottom: 56.25%;
+
+/*------------------------------
+
+ここからアコーディオンのCSS
+
+------------------------------*/
+/* チェックボックスは非表示 */
+.accordion-hidden{
+  display: none;
 }
-.g-slide iframe {
-box-shadow: 2px 2px 10px;
-border: 0;
-width: 90%;
-height: 90%;
-position: absolute;
-left: 0;
-right: 0;
-margin: auto;
-/*border-radius: 20px;*/
-}   
+
+/* Question部分 */
+.accordion-open {
+  display: block;
+  padding: 10px 10px 10px 90px;
+  background: #5ECDDE;
+  cursor: pointer;
+  margin: 5px 0;
+  font-weight: 700;
+  position: relative;/* 変更部分 */
+}
+
+/* 開閉状態を示すアイコン+の作成 */
+.accordion-open::before,
+.accordion-open::after {
+  content: '';
+  width: 20px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+}
+
+/* 一本は縦にして+を作る */
+.accordion-open::after {
+  transform: translateY(-50%) rotate(90deg);
+  transition: .5s;
+}
+
+/* QとAのデザイン */
+.accordion-open span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 100%;
+  background: #FF90A9;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 0;
+}
+
+.accordion-close span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 100%;
+  background: #ffdde4;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 0;
+}
+
+/* アコーディオンが開いたら縦棒を横棒にして-にする */
+.accordion-hidden:checked + .accordion-open:after {
+  transform: translateY(-50%) rotate(0);
+}
+
+/* Answer部分 */
+.accordion-close {
+  display: block;
+  height: 0;/* 要素の高さは0 */
+  overflow: hidden;/* 非表示 */
+  padding: 0 0 0 60px;
+  opacity: 0;
+  transition: 0.5s;/* 表示速度の設定 */
+  position: relative;
+  
+}
+
+/* チェックボックスにチェックが入ったらAnswer部分を表示する */
+.accordion-hidden:checked + .accordion-open + .accordion-close {
+  height: auto;
+  opacity: 1;
+  padding: 10px 10px 10px 90px;
+  background: #c9edf2;
+  font-weight: 700;
+}
