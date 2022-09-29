@@ -235,7 +235,7 @@ margin: auto;
 .accordion-open {
   display: block;
   padding: 10px 10px 10px 90px;
-  background: #00B4DE;
+  background: #5abe50;
   cursor: pointer;
   margin: 5px 0;
   font-weight: 700;
@@ -268,7 +268,7 @@ margin: auto;
   align-items: center;
   width: 70px;
   height: 100%;
-  background: #FDD301;
+  background: #ffac2d;
   position: absolute;
   text-align: center;
   left: 0;
